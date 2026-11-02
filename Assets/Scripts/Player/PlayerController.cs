@@ -61,7 +61,7 @@ public class PlayerController : MonoBehaviour
 
         rb.linearVelocityX = moveX * moveSpeed;
 
-        if (jumpPressed && isGrounded)
+        if (jumpPressed)
         {
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             isGrounded = false;
